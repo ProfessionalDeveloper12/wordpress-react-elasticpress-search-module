@@ -1,0 +1,10 @@
+2020-10-19T10:00:09+00:00 CRITICAL Uncaught Error: Class 'Jetpack' not found in F:\php\wordpress\Myblog\wp-content\plugins\woocommerce-services\classes\class-wc-connect-jetpack.php:92
+Stack trace:
+#0 F:\php\wordpress\Myblog\wp-content\plugins\woocommerce-services\classes\class-wc-connect-nux.php(743): WC_Connect_Jetpack::build_connect_url('http://localhos...')
+#1 F:\php\wordpress\Myblog\wp-includes\class-wp-hook.php(287): WC_Connect_Nux->ajax_get_jetpack_connect_url('')
+#2 F:\php\wordpress\Myblog\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 F:\php\wordpress\Myblog\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 F:\php\wordpress\Myblog\wp-admin\admin-ajax.php(176): do_action('wp_ajax_woocomm...')
+#5 {main}
+  thrown in F:\php\wordpress\Myblog\wp-content\plugins\woocommerce-services\classes\class-wc-connect-jetpack.php on line 92
+

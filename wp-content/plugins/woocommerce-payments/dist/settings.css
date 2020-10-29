@@ -1,0 +1,134 @@
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+/** @format */
+.chip {
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  white-space: nowrap; }
+  .chip.chip-primary {
+    background: #c5d9ed;
+    color: #043959; }
+  .chip.chip-light {
+    background: #dcdcde;
+    color: #2c3338; }
+  .chip.chip-alert {
+    background: #facfd2;
+    color: #691c1c; }
+  .chip.chip-warning {
+    background: #f5e1b3;
+    color: #907300; }
+  .chip.is-compact {
+    padding: 0.06rem 0.65rem 0.1rem; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.account-status__info {
+  margin-left: 1.6rem; }
+  .account-status__info .account-status__info__green {
+    fill: #008a20;
+    color: #008a20; }
+  .account-status__info .account-status__info__red {
+    fill: #b32d2e;
+    color: #b32d2e; }
+  .account-status__info svg {
+    margin: 0 0.2rem;
+    position: relative;
+    top: 4px; }
+
+.account-status__desc {
+  margin-top: 1rem;
+  font-style: italic; }
+

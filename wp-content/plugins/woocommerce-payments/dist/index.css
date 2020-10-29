@@ -1,0 +1,1300 @@
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/* Fix top padding when layout breaks at 782px */
+@media screen and (max-width: 782px) {
+  .woocommerce-layout .woocommerce-layout__main {
+    padding-top: 16px;
+    padding-bottom: 16px; } }
+
+.woocommerce-card__body > :first-child {
+  margin-top: 0; }
+
+.woocommerce-card__body > :last-child {
+  margin-bottom: 0; }
+
+.woocommerce-card__body hr.full-width {
+  /* Accounting for woocommerce-card__body padding */
+  margin: 0 -16px;
+  margin-bottom: -1px; }
+
+.woocommerce-card__body textarea {
+  /* Make textarea take full width of the card */
+  width: 100%;
+  padding: 6px 8px;
+  /**
+		 * This styling makes focused textarea look like other inputs.
+		 * Original styling is defined here https://github.com/woocommerce/woocommerce-admin/blob/c5811495987a05010513ce51e3dfcf538d52049a/client/stylesheets/shared/_global.scss.
+		 * TODO: remove if PR released (https://github.com/woocommerce/woocommerce-admin/pull/3655).
+		 */ }
+  .woocommerce-card__body textarea:focus {
+    color: #32373c;
+    border-color: #674399;
+    box-shadow: 0 0 2px rgba(103, 67, 153, 0.8); }
+
+.woocommerce-table {
+  font-weight: 300;
+  letter-spacing: 0.012rem;
+  color: #50575e; }
+  .woocommerce-table .woocommerce-card__header {
+    border-bottom: 1px solid #ccd0d4; }
+  .woocommerce-table .woocommerce-table__summary {
+    border-radius: 0 0 3px 3px; }
+  .woocommerce-table .woocommerce-card__menu {
+    margin: -6px 0; }
+  .woocommerce-table .woocommerce-table__item {
+    white-space: nowrap; }
+  .woocommerce-table .info-button {
+    width: 40px;
+    padding-right: 0; }
+    .woocommerce-table .info-button > a {
+      height: 18px;
+      fill: #8e9196; }
+    .woocommerce-table .info-button + .woocommerce-table__header {
+      border-left: none; }
+    .woocommerce-table .info-button .is-placeholder {
+      display: none; }
+  .woocommerce-table .payment-method__brand {
+    display: block;
+    margin: 0 auto; }
+
+/**
+ * This styling changes the appearance of warning notices to match our designs.
+ * In particular it removes margins that aren't supposed to be present, and
+ * fixes the background color.
+ */
+.wcpay-test-mode-notice.components-notice.is-warning {
+  margin: 24px 0;
+  padding: 12px;
+  background-color: #f5e1b3; }
+
+.wcpay-connect-error-notice.components-notice {
+  margin: 24px 0;
+  padding: 12px; }
+
+.wcpay-payment-details .woocommerce-card__header {
+  border-bottom: 1px solid #dcdcde; }
+
+.payment-method-details {
+  display: flex;
+  align-items: flex-start; }
+  @media screen and (max-width: 1023px) {
+    .payment-method-details {
+      display: block; } }
+  .payment-method-details__column {
+    flex: 0 0 50%; }
+
+.payment-method-detail {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 28px; }
+  .payment-method-detail__label {
+    margin: 0;
+    color: #50575e;
+    flex: 0 0 36%;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 4px 0; }
+  .payment-method-detail__value {
+    margin: 0;
+    color: #2c3338;
+    line-height: 20px;
+    padding: 4px 0; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.connect-account .connect-account__card .woocommerce-card__body {
+  line-height: 1.5; }
+  .connect-account .connect-account__card .woocommerce-card__body p,
+  .connect-account .connect-account__card .woocommerce-card__body h2 {
+    text-align: center; }
+  .connect-account .connect-account__card .woocommerce-card__body h2 {
+    font-size: 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 16px 0 8px; }
+
+.connect-account .connect-account__card .hero-image {
+  margin: 16px auto 24px;
+  display: block; }
+
+.connect-account .connect-account__card .connect-account__description {
+  margin: 0 0 16px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #50575e; }
+
+.connect-account .connect-account__card .connect-account__terms {
+  margin: 0 0 16px;
+  font-weight: 300;
+  font-size: 12px;
+  color: #50575e; }
+
+.connect-account .connect-account__card .connect-account__action {
+  margin-top: 16px; }
+  .connect-account .connect-account__card .connect-account__action .is-button {
+    height: 32px;
+    line-height: 30px;
+    padding: 0 20px 2px; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.woocommerce-payments-page {
+  margin: 0 auto;
+  max-width: 1200px; }
+  .woocommerce-payments-page.is-narrow {
+    max-width: 680px; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.wcpay-deposits-overview .wcpay-deposits-overview__schedule {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: #555d66;
+  /* Bring schedule closer to overview SummaryList */
+  margin: 0 0 -8px 0; }
+  .wcpay-deposits-overview .wcpay-deposits-overview__schedule .wcpay-deposits-overview__schedule-icon,
+  .wcpay-deposits-overview .wcpay-deposits-overview__schedule .wcpay-deposits-overview__schedule-label,
+  .wcpay-deposits-overview .wcpay-deposits-overview__schedule .wcpay-deposits-overview__schedule-value {
+    vertical-align: middle; }
+  .wcpay-deposits-overview .wcpay-deposits-overview__schedule .wcpay-deposits-overview__schedule-label {
+    font-weight: 600; }
+  .wcpay-deposits-overview .wcpay-deposits-overview__schedule .wcpay-deposits-overview__schedule-icon {
+    margin-right: 8px;
+    fill: #555d66; }
+
+.wcpay-deposits-overview .woocommerce-summary {
+  /* Hide unused SummaryNumber fields */ }
+  .wcpay-deposits-overview .woocommerce-summary .woocommerce-summary__item-label {
+    margin-bottom: 12px; }
+  .wcpay-deposits-overview .woocommerce-summary .woocommerce-summary__item-data {
+    margin-top: 0;
+    margin-bottom: 8px; }
+  .wcpay-deposits-overview .woocommerce-summary .woocommerce-summary__item-prev-value,
+  .wcpay-deposits-overview .woocommerce-summary .woocommerce-summary__item-delta {
+    display: none; }
+
+.wcpay-deposits-overview .woocommerce-summary__item {
+  background: #fff; }
+
+.wcpay-deposits-overview a.woocommerce-summary__item:hover {
+  background-color: #f3f4f5; }
+
+.wcpay-deposits-overview a.woocommerce-summary__item:active {
+  background-color: #edeff0; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.is-loadable-placeholder {
+  animation: loading-fade 1.6s ease-in-out infinite;
+  background-color: #e2e4e7;
+  color: transparent;
+  display: inline-block; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .is-loadable-placeholder {
+      animation: none; } }
+  .is-loadable-placeholder.is-inline {
+    display: inline; }
+  .is-loadable-placeholder.is-block {
+    display: block;
+    margin-top: 1em; }
+    .is-loadable-placeholder.is-block:first-child {
+      margin-top: 0; }
+    .is-loadable-placeholder.is-block p {
+      margin: 0; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.woocommerce-table__clickable-cell {
+  display: block;
+  margin: -16px -24px;
+  padding: 16px 24px;
+  color: inherit;
+  text-decoration: none; }
+  .woocommerce-table__clickable-cell,
+  .woocommerce-layout .woocommerce-table__clickable-cell,
+  .woocommerce-layout .woocommerce-table__clickable-cell:link,
+  .woocommerce-layout .woocommerce-table__clickable-cell:hover,
+  .woocommerce-layout .woocommerce-table__clickable-cell:focus,
+  .woocommerce-layout .woocommerce-table__clickable-cell:visited {
+    color: #50575e;
+    box-shadow: none; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.transactions-list .date-time {
+  min-width: 195px; }
+
+/**
+ * Sourced from https://github.com/woocommerce/woocommerce-admin/blob/ec36a00b77b5c0e313985a5a64c88aaec9eb154e/client/analytics/components/report-table/style.scss.
+ * Depending on the wc-admin version, these styles are not loaded if not using the analytics report components, so they need to be included here.
+ * If we switch to the Report components, we can remove them from here, as they would be loaded by wc-admin.
+*/
+.woocommerce-report-table .woocommerce-search {
+  flex-grow: 1; }
+
+.woocommerce-report-table .woocommerce-card__header {
+  position: relative; }
+
+.woocommerce-report-table.has-search .woocommerce-card__action {
+  align-items: center;
+  text-align: left;
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto 1fr auto; }
+
+@media (max-width: 960px) {
+  .woocommerce-report-table.has-search .woocommerce-card__action {
+    grid-gap: 12px;
+    grid-template-columns: auto 1fr;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0; }
+    .woocommerce-report-table.has-search .woocommerce-card__action .woocommerce-table__compare {
+      display: flex; }
+    .woocommerce-report-table.has-search .woocommerce-card__action .woocommerce-search {
+      grid-area: 2 / 2 / 3 / 4;
+      margin-right: 0; } }
+
+.woocommerce-report-table.has-search.has-search:not(.has-compare) .woocommerce-card__action {
+  grid-template-columns: 1fr auto; }
+  .woocommerce-report-table.has-search.has-search:not(.has-compare) .woocommerce-card__action .woocommerce-search {
+    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: 2; }
+
+@media (max-width: 960px) {
+  .woocommerce-report-table.has-search.has-search:not(.has-compare) .woocommerce-card__action {
+    grid-template-columns: auto; }
+    .woocommerce-report-table.has-search.has-search:not(.has-compare) .woocommerce-card__action .woocommerce-search {
+      grid-area: 2 / 1 / 3 / 4;
+      margin-left: 0; } }
+
+.woocommerce-report-table.has-search .woocommerce-search {
+  margin: 0 16px; }
+  .woocommerce-report-table.has-search .woocommerce-search .woocommerce-select-control__control {
+    height: 38px; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.wcpay-deposit-overview .woocommerce-card__body {
+  display: flex;
+  flex-direction: row; }
+
+.wcpay-deposit-overview .wcpay-deposit-detail {
+  flex-grow: 1; }
+
+.wcpay-deposit-overview .wcpay-deposit-date {
+  font-size: 11px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #8f98a1;
+  margin-bottom: 12px; }
+
+.wcpay-deposit-overview .wcpay-deposit-bank-account {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #555d66;
+  margin-top: 12px; }
+
+.wcpay-deposit-overview .wcpay-deposit-status {
+  font-size: 20px;
+  line-height: 18px;
+  color: #191e23; }
+  .wcpay-deposit-overview .wcpay-deposit-status .woocommerce-order-status__indicator {
+    width: 0.85em;
+    height: 0.85em; }
+    .wcpay-deposit-overview .wcpay-deposit-status .woocommerce-order-status__indicator.is-paid {
+      background: #008a20;
+      border-color: #b8e6bf; }
+    .wcpay-deposit-overview .wcpay-deposit-status .woocommerce-order-status__indicator.is-pending, .wcpay-deposit-overview .wcpay-deposit-status .woocommerce-order-status__indicator.is-in_transit {
+      background: #dbae17;
+      border-color: #f5e1b3; }
+    .wcpay-deposit-overview .wcpay-deposit-status .woocommerce-order-status__indicator.is-failed {
+      background: #d63638;
+      border-color: #facfd2; }
+
+.wcpay-deposit-overview .wcpay-deposit-hero {
+  flex-grow: 5;
+  border-left: 1px solid #e2e4e7;
+  margin: -16px 0;
+  padding: 16px 0; }
+
+.wcpay-deposit-overview .wcpay-deposit-amount {
+  text-align: right;
+  font-size: 36px;
+  line-height: 72px;
+  color: #191e23;
+  padding-right: 18px; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+/** @format */
+.chip {
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  white-space: nowrap; }
+  .chip.chip-primary {
+    background: #c5d9ed;
+    color: #043959; }
+  .chip.chip-light {
+    background: #dcdcde;
+    color: #2c3338; }
+  .chip.chip-alert {
+    background: #facfd2;
+    color: #691c1c; }
+  .chip.chip-warning {
+    background: #f5e1b3;
+    color: #907300; }
+  .chip.is-compact {
+    padding: 0.06rem 0.65rem 0.1rem; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+/** @format **/
+.payment-method-details .payment-method__brand {
+  width: 28px;
+  width: 1.75rem;
+  height: 17px;
+  height: 1.063rem;
+  margin-bottom: -4px;
+  margin-bottom: -0.25rem;
+  margin-top: 1px; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+/** @format */
+.woocommerce-card__body .woocommerce-list--horizontal {
+  /* Account for Card margin when applying borders between lines */
+  margin: 0 -16px 0 -16px; }
+
+.woocommerce-card__body .woocommerce-list--horizontal,
+.woocommerce-list--horizontal {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column; }
+  @media (min-width: 801px) {
+    .woocommerce-card__body .woocommerce-list--horizontal,
+    .woocommerce-list--horizontal {
+      flex-direction: initial;
+      margin: 1rem 0 0 0; } }
+  .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item,
+  .woocommerce-list--horizontal .woocommerce-list__item {
+    padding: 0.75rem 1rem;
+    border-left: 0;
+    border-bottom: 1px solid #dcdcde;
+    border-top: 0; }
+    @media (min-width: 801px) {
+      .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item,
+      .woocommerce-list--horizontal .woocommerce-list__item {
+        padding: 0 1rem;
+        border-left: 1px solid #dcdcde;
+        border-bottom: 0; } }
+    .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item:hover,
+    .woocommerce-list--horizontal .woocommerce-list__item:hover {
+      background: none; }
+      .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item:hover .woocommerce-list__item-title,
+      .woocommerce-list--horizontal .woocommerce-list__item:hover .woocommerce-list__item-title {
+        color: #50575e; }
+    .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item .woocommerce-list__item-inner,
+    .woocommerce-list--horizontal .woocommerce-list__item .woocommerce-list__item-inner {
+      margin: 0;
+      padding: 0; }
+    .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item .woocommerce-list__item-title,
+    .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item .woocommerce-list__item-content,
+    .woocommerce-list--horizontal .woocommerce-list__item .woocommerce-list__item-title,
+    .woocommerce-list--horizontal .woocommerce-list__item .woocommerce-list__item-content {
+      margin-top: 0;
+      font-size: 14px;
+      font-size: 0.875rem; }
+    .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item .woocommerce-list__item-title,
+    .woocommerce-list--horizontal .woocommerce-list__item .woocommerce-list__item-title {
+      color: #50575e; }
+    .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item .woocommerce-list__item-content,
+    .woocommerce-list--horizontal .woocommerce-list__item .woocommerce-list__item-content {
+      color: #2c3338; }
+  @media (min-width: 801px) {
+    .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item:first-child,
+    .woocommerce-list--horizontal .woocommerce-list__item:first-child {
+      border-left: 0;
+      padding-left: 0; } }
+  .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item:last-child,
+  .woocommerce-list--horizontal .woocommerce-list__item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0; }
+    @media (min-width: 801px) {
+      .woocommerce-card__body .woocommerce-list--horizontal .woocommerce-list__item:last-child,
+      .woocommerce-list--horizontal .woocommerce-list__item:last-child {
+        padding-right: 0; } }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+/** @format */
+.payment-details-summary {
+  display: flex;
+  margin-bottom: 1rem; }
+  @media (max-width: 660px) {
+    .payment-details-summary {
+      flex-direction: column; } }
+  .payment-details-summary .payment-details-summary__section {
+    flex-grow: 1; }
+  .payment-details-summary .payment-details-summary__amount {
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; }
+    .payment-details-summary .payment-details-summary__amount .payment-details-summary__amount-currency {
+      font-size: 16px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin: 0 0.5rem;
+      color: #50575e; }
+  .payment-details-summary .payment-details-summary__breakdown p {
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #555d66;
+    display: inline-block;
+    margin: 0.25rem 1rem 0 0; }
+  .payment-details-summary .payment-details-summary__breakdown p:last-child {
+    margin-right: 0; }
+  .payment-details-summary .payment-details-summary__id {
+    height: 100%;
+    margin-top: 8px;
+    color: #787c82;
+    display: flex;
+    align-items: start;
+    justify-content: initial; }
+    @media (min-width: 661px) {
+      .payment-details-summary .payment-details-summary__id {
+        justify-content: flex-end; } }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.woocommerce-card__body .woocommerce-card__footer {
+  /* Add margin and padding to align with .woocommerce-card__body padding */
+  margin: 16px -16px 0;
+  padding: 16px;
+  border-top: 1px solid #dcdcde; }
+  .woocommerce-card__body .woocommerce-card__footer:last-child {
+    padding-bottom: 0; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.wcpay-dispute-info-item:first-child {
+  margin-top: 0; }
+
+.wcpay-dispute-info-key {
+  font-weight: 600; }
+
+/**
+ * Colors
+ */
+/**
+ * Often re-used variables
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Button states and focus styles
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Applies editor right position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/** @format */
+/**
+ * Colors
+ */
+/** @format */
+/* stylelint-disable block-closing-brace-newline-after */
+/** @format */
+.wcpay-dispute-details .woocommerce-card__header,
+.wcpay-dispute-details .woocommerce-card__body,
+.wcpay-dispute-evidence .woocommerce-card__header,
+.wcpay-dispute-evidence .woocommerce-card__body {
+  padding: 16px 24px; }
+
+.wcpay-dispute-details .woocommerce-card__header,
+.wcpay-dispute-evidence .woocommerce-card__header {
+  border-bottom: 1px solid #dcdcde; }
+
+.wcpay-dispute-details .woocommerce-card__title,
+.wcpay-dispute-evidence .woocommerce-card__title {
+  padding: 3px 0;
+  font-size: 20px;
+  font-size: 1.2rem;
+  font-weight: 300; }
+
+.wcpay-dispute-details .woocommerce-card__body,
+.wcpay-dispute-evidence .woocommerce-card__body {
+  font-weight: 300;
+  letter-spacing: 0.012rem;
+  line-height: 1.5; }
+  .wcpay-dispute-details .woocommerce-card__body,
+  .wcpay-dispute-details .woocommerce-card__body p,
+  .wcpay-dispute-details .woocommerce-card__body h3,
+  .wcpay-dispute-evidence .woocommerce-card__body,
+  .wcpay-dispute-evidence .woocommerce-card__body p,
+  .wcpay-dispute-evidence .woocommerce-card__body h3 {
+    font-size: 1rem; }
+  .wcpay-dispute-details .woocommerce-card__body .woocommerce-card__footer,
+  .wcpay-dispute-evidence .woocommerce-card__body .woocommerce-card__footer {
+    margin-left: -24px;
+    margin-right: -24px;
+    padding-left: 24px;
+    padding-right: 24px; }
+
+.wcpay-dispute-details .is-button.is-large,
+.wcpay-dispute-evidence .is-button.is-large {
+  height: 40px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 15px 2px; }
+
+.wcpay-dispute-details .components-form-file-upload .is-button.is-large,
+.wcpay-dispute-evidence .components-form-file-upload .is-button.is-large {
+  padding-left: 14px;
+  padding-bottom: 0; }
+  .wcpay-dispute-details .components-form-file-upload .is-button.is-large svg,
+  .wcpay-dispute-evidence .components-form-file-upload .is-button.is-large svg {
+    margin-right: 6px; }
+
+.wcpay-dispute-details .is-button + .is-button,
+.wcpay-dispute-evidence .is-button + .is-button {
+  margin-left: 10px; }
+
+.wcpay-dispute-details .components-base-control .components-base-control__label,
+.wcpay-dispute-evidence .components-base-control .components-base-control__label {
+  font-size: 12px;
+  color: #555d66; }
+
+.wcpay-dispute-details .components-base-control + .components-base-control,
+.wcpay-dispute-evidence .components-base-control + .components-base-control {
+  margin: 16px 0 0; }
+
+.wcpay-dispute-details .components-base-control:first-child,
+.wcpay-dispute-evidence .components-base-control:first-child {
+  margin-top: 4px; }
+
+.wcpay-dispute-details .components-base-control:last-child > p,
+.wcpay-dispute-evidence .components-base-control:last-child > p {
+  margin-bottom: 8px; }
+
+.wcpay-dispute-details .components-base-control > .components-base-control__help,
+.wcpay-dispute-evidence .components-base-control > .components-base-control__help {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #787c82;
+  margin-top: 0; }
+
+.wcpay-dispute-details .file-upload,
+.wcpay-dispute-evidence .file-upload {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .wcpay-dispute-details .file-upload .components-icon-button.is-primary:not(:disabled):not([aria-disabled='true']):hover,
+  .wcpay-dispute-evidence .file-upload .components-icon-button.is-primary:not(:disabled):not([aria-disabled='true']):hover {
+    background-color: #ab235a;
+    border-color: #ab235a; }
+  .wcpay-dispute-details .file-upload .components-icon-button.is-primary:not(:disabled):not([aria-disabled='true']).is-success,
+  .wcpay-dispute-evidence .file-upload .components-icon-button.is-primary:not(:disabled):not([aria-disabled='true']).is-success {
+    background-color: #008a20;
+    border-color: #008a20; }
+    .wcpay-dispute-details .file-upload .components-icon-button.is-primary:not(:disabled):not([aria-disabled='true']).is-success:hover,
+    .wcpay-dispute-evidence .file-upload .components-icon-button.is-primary:not(:disabled):not([aria-disabled='true']).is-success:hover {
+      background-color: #007017;
+      border-color: #007017; }
+  .wcpay-dispute-details .file-upload .components-icon-button.is-primary:not(:disabled):not([aria-disabled='true']).is-destructive,
+  .wcpay-dispute-evidence .file-upload .components-icon-button.is-primary:not(:disabled):not([aria-disabled='true']).is-destructive {
+    background-color: #d63638;
+    border-color: #d63638; }
+    .wcpay-dispute-details .file-upload .components-icon-button.is-primary:not(:disabled):not([aria-disabled='true']).is-destructive:hover,
+    .wcpay-dispute-evidence .file-upload .components-icon-button.is-primary:not(:disabled):not([aria-disabled='true']).is-destructive:hover {
+      background-color: #b32d2e;
+      border-color: #b32d2e; }
+  .wcpay-dispute-details .file-upload .components-icon-button.delete-uploaded-file-button:not(:disabled):not([aria-disabled='true']):hover,
+  .wcpay-dispute-evidence .file-upload .components-icon-button.delete-uploaded-file-button:not(:disabled):not([aria-disabled='true']):hover {
+    color: #b32d2e;
+    box-shadow: none; }
+  .wcpay-dispute-details .file-upload .upload-message,
+  .wcpay-dispute-evidence .file-upload .upload-message {
+    padding-left: 24px;
+    color: #787c82; }
+    .wcpay-dispute-details .file-upload .upload-message.is-destructive,
+    .wcpay-dispute-evidence .file-upload .upload-message.is-destructive {
+      color: #d63638; }
+
